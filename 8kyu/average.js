@@ -1,12 +1,14 @@
-function updateLight(current) {
-    if (current === "green") {
-        return "yellow";
+function findAverage(array) {
+
+    if (array.length === 0) {
+        return 0;
     }
-    else if (current === "yellow") {
-        return "red";
+
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
     }
-    else {
-        return "green";
-    }
+
+    return sum / array.length;
 
 }
